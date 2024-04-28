@@ -130,7 +130,7 @@ void app_main(void)
     ESP_LOGI(TAG, "Display LVGL Scroll Text");
     // Lock the mutex due to the LVGL APIs are not thread-safe
     if (lvgl_port_lock(0)) {
-        example_lvgl_demo_ui_2(disp);
+        example_lvgl_demo_ui(disp);
         // Release the mutex
         lvgl_port_unlock();
     }
